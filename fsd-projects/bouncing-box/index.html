@@ -79,12 +79,17 @@
          * Each time it is called, it should move the Box to a new location.
          * If the box drifts off the screen, turn it around!
          */
-        function update() {
+        function update( ) {
           positionX += 10
           
               moveBoxTo(positionX) 
           //  positionX = positionX + speed;
-          if(positionX > boardWidth){speed *= -1;}
+          if(positionX > boardWidth){
+            speed *= -1;
+          } if (positionX ___ boardWidth) {
+  // Code to reverse speed goes here
+}
+
         }
 
         /**
@@ -95,10 +100,11 @@
          * - move the box to the left side of the screen.
          */
         function handleBoxClick() {
-        positionX= 0;
+        positionX=positionX = positionX + speed;
+        
         changeBoxText(points)
        points++;
-       var speed
+       speed += 3
         }
        
 
